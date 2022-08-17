@@ -15661,6 +15661,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6287553890659693948, guid: 2cd4737ac7472a240bfb9486f4698298, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6287553890659693948, guid: 2cd4737ac7472a240bfb9486f4698298, type: 3}
+      propertyPath: m_UsedByEffector
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7229712534165293088, guid: 2cd4737ac7472a240bfb9486f4698298, type: 3}
       propertyPath: m_Name
       value: Slime

@@ -27,6 +27,7 @@ public class Enemy : MonoBehaviour
 
     public void Defeated(){
         animator.SetTrigger("Defeated");
+        Debug.Log("Defeated");
     }
 
     public void RemoveEnemy() {
