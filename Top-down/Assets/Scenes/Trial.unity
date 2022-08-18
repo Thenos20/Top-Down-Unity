@@ -1400,9 +1400,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playercollider: {fileID: 1159066925}
-  slimedamage: 1
+  slimedamage: 3
   swordattack2: {fileID: 0}
-  playerhealth: 1
+  playerhealth: 6
 --- !u!61 &1159066925 stripped
 BoxCollider2D:
   m_CorrespondingSourceObject: {fileID: 7929382276673161479, guid: 6f03bc1889d2dc34da710b6aec411572, type: 3}
