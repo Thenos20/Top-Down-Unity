@@ -36,7 +36,7 @@ public class PlayerHealth : MonoBehaviour
     }
 
     public void RemovePlayer() {
-        Destroy(gameObject);
+        this.gameObject.SetActive(false);
     }
 
 
@@ -58,7 +58,7 @@ public class PlayerHealth : MonoBehaviour
 
             
             if(playerhealth <= 0) {
-                this.gameObject.SetActive(false);
+                
                 PlayerDefeated();
                 Debug.Log("playerdeath");
             }
