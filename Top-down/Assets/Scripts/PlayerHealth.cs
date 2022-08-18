@@ -25,7 +25,7 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-    public float playerhealth = 1;
+    public float playerhealth = 6;
 
     private void Start() {
         animator = GetComponent<Animator>();
@@ -53,7 +53,7 @@ public class PlayerHealth : MonoBehaviour
         if(other.tag == "Enemy") {
             Enemy enemy = other.GetComponent<Enemy>();
             // Deal damage to the enemy
-            playerhealth -= slimedamage;
+            
             Debug.Log("Trigger");
 
             

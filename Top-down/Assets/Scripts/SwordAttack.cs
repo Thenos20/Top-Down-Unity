@@ -35,9 +35,12 @@ public class SwordAttack : MonoBehaviour
         if(other.tag == "Enemy") {
             // Deal damage to the enemy
             Enemy enemy = other.GetComponent<Enemy>();
-
+            
+            
             if(enemy != null) {
+                
                 enemy.Health -= damage;
+                
             }
         }
     }

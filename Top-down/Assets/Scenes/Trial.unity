@@ -1399,10 +1399,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc2b991f94ec95f47bc51ab64710bade, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playercollider: {fileID: 0}
-  slimedamage: 3
+  playercollider: {fileID: 1159066925}
+  slimedamage: 1
   swordattack2: {fileID: 0}
   playerhealth: 1
+--- !u!61 &1159066925 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 7929382276673161479, guid: 6f03bc1889d2dc34da710b6aec411572, type: 3}
+  m_PrefabInstance: {fileID: 8040242352957873375}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1310146437
 GameObject:
   m_ObjectHideFlags: 0
@@ -15854,6 +15859,10 @@ PrefabInstance:
     - target: {fileID: 8040242353436250872, guid: 6f03bc1889d2dc34da710b6aec411572, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8040242353436250872, guid: 6f03bc1889d2dc34da710b6aec411572, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8208186802621693062, guid: 6f03bc1889d2dc34da710b6aec411572, type: 3}
       propertyPath: m_Size.x
