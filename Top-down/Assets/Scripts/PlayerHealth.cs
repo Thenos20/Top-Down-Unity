@@ -42,15 +42,11 @@ public class PlayerHealth : MonoBehaviour
 
     
 
-    void ifsword(){//sätt in i ontrigger2d och använd för att inte ta dmg
-        if(swordattack2.swordCollider.enabled == true){
-            return;
-        }
-    }
+    
 
 
     public void OnTriggerEnter2D(Collider2D other) {
-        if(other.tag == "Enemy" && this.animator.GetCurrentAnimatorStateInfo(0).IsName("player_attack") == false) {
+        if(other.tag == "Enemy" && this.animator.GetCurrentAnimatorStateInfo(0).IsName("player_attack") == false && other is CapsuleCollider2D) {
             Enemy enemy = other.GetComponent<Enemy>();
             // Deal damage to the enemy
             playerhealth -= slimedamage;
