@@ -7,33 +7,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2903012129320014381, guid: 2cd4737ac7472a240bfb9486f4698298, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6287553890659693948, guid: 2cd4737ac7472a240bfb9486f4698298, type: 3}
-      propertyPath: m_Size.x
-      value: 1.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6287553890659693948, guid: 2cd4737ac7472a240bfb9486f4698298, type: 3}
-      propertyPath: m_Size.y
-      value: 1.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6287553890659693948, guid: 2cd4737ac7472a240bfb9486f4698298, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6287553890659693948, guid: 2cd4737ac7472a240bfb9486f4698298, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6287553890659693948, guid: 2cd4737ac7472a240bfb9486f4698298, type: 3}
-      propertyPath: m_UsedByEffector
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7229712534165293088, guid: 2cd4737ac7472a240bfb9486f4698298, type: 3}
       propertyPath: m_Name
-      value: AI_Slime
+      value: AI_Slime Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8022903061228624924, guid: 2cd4737ac7472a240bfb9486f4698298, type: 3}
       propertyPath: m_RootOrder
@@ -79,35 +55,5 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8880393913845134841, guid: 2cd4737ac7472a240bfb9486f4698298, type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8900803314625571909, guid: 2cd4737ac7472a240bfb9486f4698298, type: 3}
-      propertyPath: health
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6287553890659693948, guid: 2cd4737ac7472a240bfb9486f4698298, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2cd4737ac7472a240bfb9486f4698298, type: 3}
---- !u!1 &6699023295652510499 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7229712534165293088, guid: 2cd4737ac7472a240bfb9486f4698298, type: 3}
-  m_PrefabInstance: {fileID: 4081016691385152259}
-  m_PrefabAsset: {fileID: 0}
---- !u!58 &1229791010
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6699023295652510499}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.45
