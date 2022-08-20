@@ -135,21 +135,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4886565778731461282, guid: 748e02dc6ffa55647930fd4e0ffa3006, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 93b9069071ea62e44bcce712083096fd, type: 2}
     - target: {fileID: 6338179706686189343, guid: 748e02dc6ffa55647930fd4e0ffa3006, type: 3}
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6338179706686189343, guid: 748e02dc6ffa55647930fd4e0ffa3006, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.907
+      value: -0.891
       objectReference: {fileID: 0}
     - target: {fileID: 6338179706686189343, guid: 748e02dc6ffa55647930fd4e0ffa3006, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.462
+      value: 0.684
       objectReference: {fileID: 0}
     - target: {fileID: 6338179706686189343, guid: 748e02dc6ffa55647930fd4e0ffa3006, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.037615366
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6338179706686189343, guid: 748e02dc6ffa55647930fd4e0ffa3006, type: 3}
       propertyPath: m_LocalRotation.w
@@ -178,6 +182,10 @@ PrefabInstance:
     - target: {fileID: 6338179706686189343, guid: 748e02dc6ffa55647930fd4e0ffa3006, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6402907523797096456, guid: 748e02dc6ffa55647930fd4e0ffa3006, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6699023295652510499, guid: 748e02dc6ffa55647930fd4e0ffa3006, type: 3}
       propertyPath: m_Name
@@ -1567,6 +1575,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AIspeed: 0.5
+--- !u!61 &1509386066
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1509386057}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.1, y: 0.1}
+  m_EdgeRadius: 0
 --- !u!1 &1651776338
 GameObject:
   m_ObjectHideFlags: 0
@@ -15786,6 +15820,10 @@ PrefabInstance:
       propertyPath: m_UsedByEffector
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6951619896793475851, guid: 2cd4737ac7472a240bfb9486f4698298, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7229712534165293088, guid: 2cd4737ac7472a240bfb9486f4698298, type: 3}
       propertyPath: m_Name
       value: Slime
@@ -15851,6 +15889,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -6776200650015497805, guid: 6f03bc1889d2dc34da710b6aec411572, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 988731152515990009, guid: 6f03bc1889d2dc34da710b6aec411572, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
