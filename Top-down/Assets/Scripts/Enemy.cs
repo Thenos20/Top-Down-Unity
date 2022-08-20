@@ -30,6 +30,7 @@ public class Enemy : MonoBehaviour
     }
 
     public void RemoveEnemy() {
-        Destroy(gameObject);
+        //Destroy(gameObject);
+        this.gameObject.SetActive(false);
     }
 }
