@@ -14,7 +14,7 @@ public class EnemySpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (SlimePrefab.activeSelf == true){
+        if (SlimePrefab.activeSelf == false){
             StartCoroutine(spawnEnemy(slimeInterval, SlimePrefab));
         }
     }
