@@ -6,16 +6,30 @@ public class EnemyAI : MonoBehaviour
 {
     public float AIspeed = 1f;
     private Transform target;
-    
+    Animator animator;
+
+    private void Start() {
+        animator = GetComponent<Animator>();
+    }
+
+    public void EnemyMove(){
+        animator.SetTrigger("EnemyMove");
+    }
+
+    public void EnemyStopMove(){
+        animator.SetTrigger("EnemyStopMove");
+    }
 
     private void Update(){
         if (target != null){
             float step = AIspeed * Time.deltaTime;
             transform.position = Vector2.MoveTowards(transform.position, target.position, step);
+            EnemyMove();
         }
 
-        else{
-            return;
+        else if (target == null){
+
+            EnemyStopMove();
         }
     }
 
