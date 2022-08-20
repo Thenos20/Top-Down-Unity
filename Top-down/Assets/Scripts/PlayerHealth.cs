@@ -39,9 +39,6 @@ public class PlayerHealth : MonoBehaviour
         this.gameObject.SetActive(false);
     }
 
-
-    
-
     
 
 

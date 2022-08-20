@@ -6,6 +6,7 @@ public class EnemyAI : MonoBehaviour
 {
     public float AIspeed = 1f;
     private Transform target;
+    
 
     private void Update(){
         if (target != null){
