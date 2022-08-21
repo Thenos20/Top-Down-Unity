@@ -14,15 +14,19 @@ public class PlayerController1 : MonoBehaviour
         }
     }
 
+
     public float moveSpeed = 150f;
     public float maxSpeed = 8f;
     public float idleFriction = 0.9f;
 
-    Rigidbody2D rb;
+    //public GameObject swordHitBox;
+    //Collider2D swordCollider;
 
+    Rigidbody2D rb;
     Animator animator;
     SpriteRenderer spriteRenderer;
     Vector2 moveInput = Vector2.zero;
+
 
     bool ismoving = false;
     bool canmove = true;
@@ -31,6 +35,7 @@ public class PlayerController1 : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        //swordCollider = swordHitBox.GetComponent<Collider2D>();
     }
 
     void FixedUpdate(){
