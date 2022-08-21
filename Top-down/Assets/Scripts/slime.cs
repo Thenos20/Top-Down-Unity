@@ -5,29 +5,35 @@ using UnityEngine;
 public class slime : MonoBehaviour
 {
 
-
+    bool isAlive = true;
     Animator animator;
 
     public float Health{
         set{
-            float OldHp = _health;
-            _health = value;
-            if (OldHp > _health){
+            
+            //OldHp > _health
+            if (value < _health){
                 //Debug.Log(dmg);
                 animator.SetTrigger("hit");
-                Debug.Log(_health);
+                //Debug.Log(_health);
             }
+
+            
+            _health = value;
+            
             if (_health <= 0){
-                animator.SetTrigger("death");
+                animator.SetBool("isAlive", false);
             }
         }
         get{
             return _health;
+            
         }
     }
 
     public void Start(){
         animator = GetComponent<Animator>();
+        animator.SetBool("isAlive", isAlive);
     }
 
     public float _health = 3;
