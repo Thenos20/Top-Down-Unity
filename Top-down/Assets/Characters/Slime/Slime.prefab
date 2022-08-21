@@ -11,10 +11,8 @@ GameObject:
   - component: {fileID: 8022903061228624924}
   - component: {fileID: 8880393913845134841}
   - component: {fileID: 6951619896793475851}
-  - component: {fileID: 2903012129320014381}
-  - component: {fileID: 8900803314625571909}
   - component: {fileID: -328130963770058335}
-  - component: {fileID: 6287553890659693948}
+  - component: {fileID: 2059377492360322213}
   m_Layer: 0
   m_Name: Slime
   m_TagString: Enemy
@@ -97,48 +95,19 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7229712534165293088}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!70 &2903012129320014381
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7229712534165293088}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.002696216, y: -0.013481051}
-  m_Size: {x: 0.118983716, y: 0.118983716}
-  m_Direction: 0
---- !u!114 &8900803314625571909
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7229712534165293088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8853797ad0d6c75499e97dab3f0be31b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 1
+  m_Constraints: 4
 --- !u!95 &-328130963770058335
 Animator:
   serializedVersion: 4
@@ -159,8 +128,8 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!70 &6287553890659693948
-CapsuleCollider2D:
+--- !u!58 &2059377492360322213
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -172,6 +141,6 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.002696216, y: -0.01348105}
-  m_Size: {x: 0.1189837, y: 0.1189837}
-  m_Direction: 0
+  m_Offset: {x: 0, y: -0.02}
+  serializedVersion: 2
+  m_Radius: 0.05
