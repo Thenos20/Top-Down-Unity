@@ -132,7 +132,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3561336296792134150, guid: edff6d99c2c23a847bda972112d3cae4, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3561336296792134150, guid: edff6d99c2c23a847bda972112d3cae4, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6468941370035699857, guid: edff6d99c2c23a847bda972112d3cae4, type: 3}
       propertyPath: m_LocalPosition.y
@@ -204,37 +208,6 @@ PrefabInstance:
       objectReference: {fileID: 1878243983}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edff6d99c2c23a847bda972112d3cae4, type: 3}
---- !u!1 &59818433 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3770337894284494219, guid: edff6d99c2c23a847bda972112d3cae4, type: 3}
-  m_PrefabInstance: {fileID: 59818432}
-  m_PrefabAsset: {fileID: 0}
---- !u!61 &59818434
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 59818433}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.1, y: -0.09}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.11, y: 0.16}
-  m_EdgeRadius: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1536,7 +1509,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7772278, y: 1}
+    m_SensorSize: {x: 1.7772828, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
