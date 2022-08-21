@@ -31,11 +31,11 @@ public class slime : MonoBehaviour
     }
 
     public float _health = 3;
-    public float dmg = -1;
+    
     void OnHit(float damage){
         Debug.Log("slime has been hit" + damage);
         Health -= damage;
-        dmg -= damage;
+        
     }
 
 }
