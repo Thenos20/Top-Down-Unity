@@ -44,8 +44,14 @@ public class PlayerController1 : MonoBehaviour
 
             if (moveInput.x > 0){
                 spriteRenderer.flipX = false;
+                //ny
+                gameObject.BroadcastMessage("IsFacingRight", true);
+
             } else if (moveInput.x < 0){
                 spriteRenderer.flipX = true;
+                //ny
+                gameObject.BroadcastMessage("IsFacingRight", false);
+
             }
             Ismoving = true;
             
