@@ -33,3 +33,4 @@ public class Enemy : MonoBehaviour
         Destroy(gameObject);
     }
 }
+// Running script go brrr
